@@ -6,6 +6,9 @@ COPY requirements.txt .
 
 RUN apt-get update && apt-get install -y python3-distutils
 
+RUN apt-get install -y python3-dev default-libmysqlclient-dev build-essential
+
+
 RUN pip install -r requirements.txt
 
 COPY . .
