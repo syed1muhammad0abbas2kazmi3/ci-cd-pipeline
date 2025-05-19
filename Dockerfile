@@ -1,4 +1,4 @@
-FROM python:3.11  # Use a stable version that still supports distutils
+FROM python:3.11  
 
 WORKDIR /data
 
